@@ -3,51 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Odontológica</title>
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro de Cliente - Clínica Odontológica</title>
-
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>Cadastro de Cliente - Clínica Odontológica</h1>
+        <div class="logo">
+            <h1>Clínica Odontológica - Cuide do Seu Sorriso</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>Preencha seus dados</h2>
-        <form action="/enviar-dados" method="post">
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" name="nome" required>
+    <!-- Seção de Introdução -->
+    <section id="introducao" class="intro">
+        <div class="container">
+            <h2>Transforme o Seu Sorriso</h2>
+            <p>Com tratamentos odontológicos modernos, a Clínica Odontológica oferece soluções para um sorriso saudável e radiante.</p>
+            <a href="#contato" class="cta-btn">Agende Sua Consulta</a>
+        </div>
+    </section>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Seção de Benefícios -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Por Que Escolher a Nossa Clínica?</h2>
+            <div class="beneficios">
+                <div class="beneficio">
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Nossos profissionais atendem você com atenção e cuidado, criando um plano de tratamento único.</p>
+                </div>
+                <div class="beneficio">
+                    <h3>Tecnologia de Ponta</h3>
+                    <p>Utilizamos equipamentos modernos para garantir um tratamento preciso e confortável.</p>
+                </div>
+                <div class="beneficio">
+                    <h3>Ambiente Confortável</h3>
+                    <p>Ambiente acolhedor e agradável para proporcionar uma experiência tranquila.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" required>
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Serviços Oferecidos</h2>
+            <ul>
+                <li>Clareamento Dentário</li>
+                <li>Implantes Dentários</li>
+                <li>Ortodontia (Aparelhos Dentários)</li>
+                <li>Restaurações Estéticas</li>
+                <li>Endodontia (Tratamento de Canal)</li>
+            </ul>
+        </div>
+    </section>
 
-            <label for="data_nascimento">Data de Nascimento</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" required>
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Página em desenvolvimento. Em breve, tentraremos em contato em breve.</p>
+        </div>
+    </section>
 
-            <label for="endereco">Endereço</label>
-            <textarea id="endereco" name="endereco" rows="4" required></textarea>
+    <button type="button" onclick="window.location.href='cadastro.html'">Cadastro</button>
+    <button type="button" onclick="window.location.href='servicos.html'">Serviços</button>
 
-            <label for="plano_tratamento">Plano de Tratamento</label>
-            <select id="plano_tratamento" name="plano_tratamento" required>
-                <option value="">Selecione um plano</option>
-                <option value="estetica">Estética</option>
-                <option value="ortodontia">Ortodontia</option>
-                <option value="implantes">Implantes</option>
-                <option value="restauracoes">Restaurações</option>
-            </select>
-
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
-
-    <p><a href="index.html">Voltar para o Menu Inicial</a></p>
-</div>
-
-    <div class="form-footer">
-        <p>&copy; 2024 Clínica Odontológica. Todos os direitos reservados.</p>
-    </div>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica Odontológica | Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
