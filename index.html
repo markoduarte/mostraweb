@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Cliente - Clínica Odontológica</title>
+
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Cliente - Clínica Odontológica</h1>
+    </header>
+
+    <div class="container">
+        <h2>Preencha seus dados</h2>
+        <form action="/enviar-dados" method="post">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="endereco">Endereço</label>
+            <textarea id="endereco" name="endereco" rows="4" required></textarea>
+
+            <label for="plano_tratamento">Plano de Tratamento</label>
+            <select id="plano_tratamento" name="plano_tratamento" required>
+                <option value="">Selecione um plano</option>
+                <option value="estetica">Estética</option>
+                <option value="ortodontia">Ortodontia</option>
+                <option value="implantes">Implantes</option>
+                <option value="restauracoes">Restaurações</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <p><a href="index.html">Voltar para o Menu Inicial</a></p>
+</div>
+
+    <div class="form-footer">
+        <p>&copy; 2024 Clínica Odontológica. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
